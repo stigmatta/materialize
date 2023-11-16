@@ -1,0 +1,41 @@
+body{
+    height: fit-content;
+}
+header.h-mine,footer.f-mine{
+    height: 5em;
+    line-height: 5em;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+nav .nav-mine{
+    height:3em;
+}
+.my-row{
+    height:25em;
+    line-height: 20em;
+    margin-bottom: 0 !important;
+}
+.card .card-content {
+    padding: 0 !important;
+}
+/* .my-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding:10%;
+} */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main>aside,main>section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: x-large;
+    flex-wrap: wrap;
+}
