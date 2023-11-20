@@ -1,9 +1,15 @@
-body{
-    height: fit-content;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding-bottom: 5em;
+}
+aside {
+    height: 100%;
+    box-sizing: border-box; 
 }
 header.h-mine,footer.f-mine{
-    height: 5em;
-    line-height: 5em;
+    height: 3em;
+    line-height: 3em;
     font-size: x-large;
     font-weight: bold;
     margin-bottom: 0;
@@ -12,13 +18,31 @@ header.h-mine,footer.f-mine{
 nav .nav-mine{
     height:3em;
 }
+.card{
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}
 .my-row{
-    height:25em;
     line-height: 20em;
     margin-bottom: 0 !important;
 }
+.card{
+    height: 40%;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 600px)
+{
+}
 .card .card-content {
     padding: 0 !important;
+    font-size: large !important;
+}
+.card .card-title{
+    font-size: small !important;
+}
+.card .card-content .card-title {
+    line-height: 15px !important;
 }
 /* .my-card{
     display: flex;
@@ -26,16 +50,24 @@ nav .nav-mine{
     justify-content: flex-start;
     padding:10%;
 } */
-section{
+main{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-shrink: 1;
+    height: max-content;
 }
-main>aside,main>section{
+main>section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+main>aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    font-size: x-large;
+    font-size: large;
     flex-wrap: wrap;
 }
